@@ -1,0 +1,204 @@
+{
+    "map": {
+        "1666:1670": {
+            "x": 1666,
+            "y": 1670,
+            "object_code": "white_ball",
+            "other_options": {}
+        },
+        "1669:1661": {
+            "x": 1669,
+            "y": 1661,
+            "object_code": "white_ball",
+            "other_options": {}
+        },
+        "1664:1661": {
+            "x": 1664,
+            "y": 1661,
+            "object_code": "white_ball",
+            "other_options": {}
+        },
+        "1671:1661": {
+            "x": 1671,
+            "y": 1661,
+            "object_code": "green_ball",
+            "other_options": {}
+        },
+        "1662:1661": {
+            "x": 1662,
+            "y": 1661,
+            "object_code": "green_ball",
+            "other_options": {}
+        },
+        "1660:1661": {
+            "x": 1660,
+            "y": 1661,
+            "object_code": "green_ball",
+            "other_options": {}
+        },
+        "1673:1661": {
+            "x": 1673,
+            "y": 1661,
+            "object_code": "green_ball",
+            "other_options": {}
+        },
+        "1666:1656": {
+            "x": 1666,
+            "y": 1656,
+            "object_code": "green_ball",
+            "other_options": {}
+        },
+        "1658:1661": {
+            "x": 1658,
+            "y": 1661,
+            "object_code": "green_ball",
+            "other_options": {}
+        },
+        "1675:1661": {
+            "x": 1675,
+            "y": 1661,
+            "object_code": "green_ball",
+            "other_options": {}
+        },
+        "1678:1661": {
+            "x": 1678,
+            "y": 1661,
+            "object_code": "white_ball",
+            "other_options": {}
+        },
+        "1654:1661": {
+            "x": 1654,
+            "y": 1661,
+            "object_code": "white_ball",
+            "other_options": {}
+        },
+        "1654:1659": {
+            "x": 1654,
+            "y": 1659,
+            "object_code": "green_ball",
+            "other_options": {}
+        },
+        "1654:1663": {
+            "x": 1654,
+            "y": 1663,
+            "object_code": "green_ball",
+            "other_options": {}
+        },
+        "1678:1659": {
+            "x": 1678,
+            "y": 1659,
+            "object_code": "green_ball",
+            "other_options": {}
+        },
+        "1678:1663": {
+            "x": 1678,
+            "y": 1663,
+            "object_code": "green_ball",
+            "other_options": {}
+        },
+        "1678:1657": {
+            "x": 1678,
+            "y": 1657,
+            "object_code": "green_ball",
+            "other_options": {}
+        },
+        "1678:1665": {
+            "x": 1678,
+            "y": 1665,
+            "object_code": "green_ball",
+            "other_options": {}
+        },
+        "1654:1665": {
+            "x": 1654,
+            "y": 1665,
+            "object_code": "green_ball",
+            "other_options": {}
+        },
+        "1654:1657": {
+            "x": 1654,
+            "y": 1657,
+            "object_code": "green_ball",
+            "other_options": {}
+        },
+        "1654:1668": {
+            "x": 1654,
+            "y": 1668,
+            "object_code": "white_ball",
+            "other_options": {}
+        },
+        "1654:1654": {
+            "x": 1654,
+            "y": 1654,
+            "object_code": "white_ball",
+            "other_options": {}
+        },
+        "1678:1654": {
+            "x": 1678,
+            "y": 1654,
+            "object_code": "white_ball",
+            "other_options": {
+                 "action": "if(GAME_LOGIC.game.level_vars.trigger0==undefined){\n GAME_LOGIC.game.level_vars.trigger1=0 \n let deal_with_slowtime=GAME_LOGIC.game.player.slow_time*GAME_LOGIC.game.game_speed_global \n GAME_LOGIC.game.level_vars.trigger0=true\n GAME_LOGIC.game.animated_objects.find(el=>el?.shape?.id==\"purple_enemy\").shape.children[5].style.opacity=\"0.7\"  \n GAME_LOGIC.game.animated_objects.find(el=>el?.shape?.id==\"purple_enemy\").shape.children[5].innerHTML=`<svg viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse id=\"left-eye-en\" cx=\"60\" cy=\"80\" rx=\"20\" ry=\"30\" fill=\"white\"></ellipse><ellipse id=\"right-eye-en\" cx=\"140\" cy=\"80\" rx=\"20\" ry=\"30\" fill=\"white\"></ellipse><path d=\"M 50 140 L 60 160 L 70 140 L 80 160 L 90 140 L 100 160 L 110 140 L 120 160 L 130 140 L 140 160 L 150 140\" stroke=\"white\" stroke-width=\"5\" fill=\"transparent\"><animate attributeName=\"stroke-width\" values=\"5;15;5\" dur=\"${1 * (1 / deal_with_slowtime)}s\" repeatCount=\"indefinite\" /></path><animate id=\"blink-en-left\" href=\"#left-eye-en\" attributeName=\"ry\" from=\"30\" to=\"0\" dur=\"${0.2 * (1 / deal_with_slowtime)}s\" begin=\"0s;blink-en-right-open-final.end+${2 * (1 / deal_with_slowtime)}s\" fill=\"freeze\"></animate><animate id=\"blink-en-right\" href=\"#right-eye-en\" attributeName=\"ry\" from=\"30\" to=\"0\" dur=\"${0.2 * (1 / deal_with_slowtime)}s\" begin=\"0s;blink-en-right-open-final.end+${2 * (1 / deal_with_slowtime)}s\" fill=\"freeze\"></animate><animate id=\"blink-en-left-open\" href=\"#left-eye-en\" attributeName=\"ry\" from=\"0\" to=\"30\" dur=\"${0.2 * (1 / deal_with_slowtime)}s\" begin=\"blink-en-left.end+${0.1 * (1 / deal_with_slowtime)}s\" fill=\"freeze\"></animate><animate id=\"blink-en-right-open\" href=\"#right-eye-en\" attributeName=\"ry\" from=\"0\" to=\"30\" dur=\"${0.2 * (1 / deal_with_slowtime)}s\" begin=\"blink-en-right.end+${0.1 * (1 / deal_with_slowtime)}s\" fill=\"freeze\"></animate><animate id=\"blink-en-left-1\" href=\"#left-eye-en\" attributeName=\"ry\" from=\"30\" to=\"0\" dur=\"${0.15 * (1 / deal_with_slowtime)}s\" begin=\"blink-en-left-open.end+${2 * (1 / deal_with_slowtime)}s\" fill=\"freeze\"></animate><animate id=\"blink-en-right-1\" href=\"#right-eye-en\" attributeName=\"ry\" from=\"30\" to=\"0\" dur=\"${0.15 * (1 / deal_with_slowtime)}s\" begin=\"blink-en-right-open.end+${2 * (1 / deal_with_slowtime)}s\" fill=\"freeze\"></animate><animate id=\"blink-en-left-open-1\" href=\"#left-eye-en\" attributeName=\"ry\" from=\"0\" to=\"30\" dur=\"${0.15 * (1 / deal_with_slowtime)}s\" begin=\"blink-en-left-1.end+${0.05 * (1 / deal_with_slowtime)}s\" fill=\"freeze\"></animate><animate id=\"blink-en-right-open-1\" href=\"#right-eye-en\" attributeName=\"ry\" from=\"0\" to=\"30\" dur=\"${0.15 * (1 / deal_with_slowtime)}s\" begin=\"blink-en-right-1.end+${0.05 * (1 / deal_with_slowtime)}s\" fill=\"freeze\"></animate><animate id=\"blink-en-left-2\" href=\"#left-eye-en\" attributeName=\"ry\" from=\"30\" to=\"0\" dur=\"${0.15 * (1 / deal_with_slowtime)}s\" begin=\"blink-en-left-open-1.end+${0.2 * (1 / deal_with_slowtime)}s\" fill=\"freeze\"></animate><animate id=\"blink-en-right-2\" href=\"#right-eye-en\" attributeName=\"ry\" from=\"30\" to=\"0\" dur=\"${0.15 * (1 / deal_with_slowtime)}s\" begin=\"blink-en-right-open-1.end+${0.2 * (1 / deal_with_slowtime)}s\" fill=\"freeze\"></animate><animate id=\"blink-en-left-open-2\" href=\"#left-eye-en\" attributeName=\"ry\" from=\"0\" to=\"30\" dur=\"${0.15 * (1 / deal_with_slowtime)}s\" begin=\"blink-en-left-2.end+${0.05 * (1 / deal_with_slowtime)}s\" fill=\"freeze\"></animate><animate id=\"blink-en-right-open-2\" href=\"#right-eye-en\" attributeName=\"ry\" from=\"0\" to=\"30\" dur=\"${0.15 * (1 / deal_with_slowtime)}s\" begin=\"blink-en-right-2.end+${0.05 * (1 / deal_with_slowtime)}s\" fill=\"freeze\"></animate><animate id=\"blink-en-left-final\" href=\"#left-eye-en\" attributeName=\"ry\" from=\"30\" to=\"0\" dur=\"${0.2 * (1 / deal_with_slowtime)}s\" begin=\"blink-en-left-open-2.end+${2.5 * (1 / deal_with_slowtime)}s\" fill=\"freeze\"></animate><animate id=\"blink-en-right-final\" href=\"#right-eye-en\" attributeName=\"ry\" from=\"30\" to=\"0\" dur=\"${0.2 * (1 / deal_with_slowtime)}s\" begin=\"blink-en-right-open-2.end+${2.5 * (1 / deal_with_slowtime)}s\" fill=\"freeze\"></animate><animate id=\"blink-en-left-open-final\" href=\"#left-eye-en\" attributeName=\"ry\" from=\"0\" to=\"30\" dur=\"${0.2 * (1 / deal_with_slowtime)}s\" begin=\"blink-en-left-final.end+${0.1 * (1 / deal_with_slowtime)}s\" fill=\"freeze\"></animate><animate id=\"blink-en-right-open-final\" href=\"#right-eye-en\" attributeName=\"ry\" from=\"0\" to=\"30\" dur=\"${0.2 * (1 / deal_with_slowtime)}s\" begin=\"blink-en-right-final.end+${0.1 * (1 / deal_with_slowtime)}s\" fill=\"freeze\"></animate></svg>`}"
+            }
+        },
+        "1678:1668": {
+            "x": 1678,
+            "y": 1668,
+            "object_code": "white_ball",
+            "other_options": {}
+        },
+        "1670:1670": {
+            "x": 1670,
+            "y": 1670,
+            "object_code": "green_ball",
+            "other_options": {}
+        },
+        "1666:1674": {
+            "x": 1666,
+            "y": 1674,
+            "object_code": "green_ball",
+            "other_options": {}
+        },
+        "1662:1670": {
+            "x": 1662,
+            "y": 1670,
+            "object_code": "green_ball",
+            "other_options": {}
+        },
+        "1662:1673": {
+            "x": 1662,
+            "y": 1673,
+            "object_code": "purple_enemy",
+            "other_options": {
+                "distance": 50,
+                "strength": 5,
+                "action": "let vec_info=GAME_LOGIC.game.calculateVectorInfoBetween2Objects(GAME_LOGIC.game.player,self)\n let deal_with_slowtime=GAME_LOGIC.game.player.slow_time*GAME_LOGIC.game.game_speed_global \n  if(self.real_time>0){\n  \nself.move(self.x+vec_info.dx*1*self.dt*deal_with_slowtime,self.y+vec_info.dy*1*self.dt*deal_with_slowtime) \n if (GAME_LOGIC.game.player.attraction == 0) { self.connected = false } \n  if (self.connected) { GAME_LOGIC.game.player.anchor_ballx = self.x \n GAME_LOGIC.game.player.anchor_bally = self.y }  \n } \n  "
+            }
+        }
+    },
+    "player_position": {
+        "x": 1666,
+        "y": 1666
+    },
+    "min_score_to_win": 18,
+    "time_limit": 60,
+    "acceleration": 22,
+    "max_speed": 430,
+    "zoom_value": 50,
+    "add_powers": false,
+    "map_edge_type": "deadly",
+    "edge_distance": 300,
+    "next_level": "",
+    "slow_time": "0.5",
+    "slow_time_duration": "1",
+    "size_power": "20",
+    "size_power_duration": "1",
+    "speed_power": "2",
+    "speed_power_duration": "1",
+    "tutorial": {},
+    "space_background": {
+        "p_size": 0.3,
+        "impact_force": 1,
+        "number_of_particles": 50,
+        "collisions": true
+    }
+}
